@@ -1,0 +1,14 @@
+{
+  "name": "json_api",
+  "version": "1.0.0",
+  "description": "JSON API for Mindful Meerkats app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramon Gebben <ramon@ra-ge.net> (http://ra-ge.net)",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  }
+}
