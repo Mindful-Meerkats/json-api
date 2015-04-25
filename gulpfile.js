@@ -1,8 +1,12 @@
 var gulp = require('gulp');
-var r = require('rethinkdb');
+var nodemon = require('gulp-nodemon');
 
-gulp.task('build_db', function(){
-	// TODO: Add database migration here
+gulp.task('server', function(){
+	nodemon({
+		script: 'server.js', 
+		ext: 'js',
+		env: { 'NODE_ENV': 'development' }
+  });
 });
 
 gulp.task('default',["build_db"]);
