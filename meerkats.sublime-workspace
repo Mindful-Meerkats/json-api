@@ -1,0 +1,1256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"api",
+				"api-server"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"words",
+				"words_failed"
+			],
+			[
+				"without",
+				"withoutBrakets"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"lc",
+				"location"
+			],
+			[
+				"nex",
+				"nextStepPath"
+			],
+			[
+				"next",
+				"nextStep"
+			],
+			[
+				"nes",
+				"nextStepPath"
+			],
+			[
+				"curr",
+				"currentStep"
+			],
+			[
+				"step",
+				"stepElements"
+			],
+			[
+				"sub",
+				"subscriber"
+			],
+			[
+				"blo",
+				"blogpost_comment"
+			],
+			[
+				"cre",
+				"create"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fonty",
+				"font-family"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"each",
+				"each	.each()"
+			],
+			[
+				"google",
+				"googleTranslateAPIKey"
+			],
+			[
+				"plug",
+				"plugin	plugin (method basic)"
+			],
+			[
+				"pre",
+				"prettyLogEverything"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"top",
+				"topicPath"
+			],
+			[
+				"aut",
+				"authors"
+			],
+			[
+				"at",
+				"authors"
+			],
+			[
+				"topi",
+				"topics"
+			],
+			[
+				"get",
+				"getAllTopics"
+			],
+			[
+				"dev",
+				"device"
+			],
+			[
+				"n",
+				"n_device"
+			],
+			[
+				"rest",
+				"result"
+			],
+			[
+				"promise",
+				"promisedFetch"
+			],
+			[
+				"req",
+				"reqObj"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"pro",
+				"promisedFetch"
+			],
+			[
+				"prom",
+				"promisedFetch"
+			],
+			[
+				"data",
+				"data_store"
+			],
+			[
+				"request",
+				"requestObject"
+			],
+			[
+				"syn",
+				"sync"
+			],
+			[
+				"file",
+				"file_path"
+			],
+			[
+				"sync",
+				"syncFiles"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"filter",
+				"filterSteps"
+			],
+			[
+				"Mess",
+				"_messages"
+			],
+			[
+				"mes",
+				"_message"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"inst",
+				"instruction"
+			],
+			[
+				"in",
+				"instructions"
+			],
+			[
+				"instr",
+				"Instruction"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"pho",
+				"photography"
+			],
+			[
+				"fet",
+				"fetch"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"scr",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"meta",
+				"meta_tag"
+			],
+			[
+				"qelp",
+				"qelp-hidden"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"btn",
+				"btn-menu"
+			],
+			[
+				"man",
+				"manPath"
+			],
+			[
+				"device",
+				"devicePath"
+			],
+			[
+				"topic",
+				"topicPath"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"pr",
+				"progress"
+			],
+			[
+				"getDe",
+				"getDeviceTopics"
+			],
+			[
+				"manuf",
+				"manufacturerPath"
+			],
+			[
+				"all",
+				"allDevices"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"bakcgroun",
+				"background-repeat"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"set",
+				"setup"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"when",
+				"whenDoneTemplate"
+			],
+			[
+				"has",
+				"hashit"
+			],
+			[
+				"hide",
+				"hideFeedback"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"br",
+				"brandId"
+			],
+			[
+				"bra",
+				"brandId"
+			],
+			[
+				"append",
+				"appendCta"
+			],
+			[
+				"appe",
+				"appendCta"
+			],
+			[
+				"sc",
+				"scrollTo"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ste",
+				"stepElements"
+			],
+			[
+				"ie",
+				"ieCleanUp"
+			],
+			[
+				"s",
+				"shortcode"
+			],
+			[
+				"loop",
+				"loop_end"
+			],
+			[
+				"size",
+				"size_of_last_set"
+			],
+			[
+				"open",
+				"OpenInNewTab"
+			],
+			[
+				"m",
+				"msnry"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"p",
+				"photobucket"
+			],
+			[
+				"im",
+				"imgur_cats"
+			],
+			[
+				"c",
+				"cheerio"
+			],
+			[
+				"us",
+				"user-agent"
+			],
+			[
+				"tv",
+				"tv_agents"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"a",
+				"arguments"
+			],
+			[
+				"por",
+				"process"
+			],
+			[
+				"gr",
+				"groc"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"row",
+				"rowCount"
+			],
+			[
+				"ro",
+				"rowCount"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"t",
+				"t_s"
+			],
+			[
+				"l",
+				"l_h"
+			],
+			[
+				"r",
+				"r_h"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"ch",
+				"changeActiveLi"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"w",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "npm",
+		"selected_items":
+		[
+			[
+				"npm",
+				"npm: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"cont",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"m",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"markdoiw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"makr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"M",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jsl",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"js gut",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"setting",
+				"Preferences: Settings - Default"
+			],
+			[
+				"istall",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"web",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"prefix",
+				"Autoprefix CSS"
+			],
+			[
+				"browser",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"themr",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"pregg",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"press",
+				"Preferences: Settings - User"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pACKage ins",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ramon/Projects/Meerkats/json_api",
+		"/Users/ramon/Projects/Meerkats/json_api/routes",
+		"/Users/ramon/Projects/Meerkats/admin"
+	],
+	"file_history":
+	[
+		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/index.js",
+		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
+		"/Users/ramon/Projects/Meerkats/json_api/api.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/quests.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
+		"/Users/ramon/Projects/Meerkats/json_api/package.json",
+		"/Users/ramon/Projects/Meerkats/admin/ui/jsx/app.js",
+		"/Users/ramon/Projects/Meerkats/admin/server.js",
+		"/Users/ramon/Projects/Meerkats/admin/gulpfile.js",
+		"/Users/ramon/Projects/Meerkats/admin/app.js",
+		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
+		"/Users/ramon/Projects/Meerkats/admin/public/css/index.css",
+		"/Users/ramon/Projects/Meerkats/admin/public/js/index.js",
+		"/Users/ramon/Projects/Meerkats/json_api/server.js",
+		"/Users/ramon/Projects/Meerkats/json_api/README.md",
+		"/Users/ramon/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ramon/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ramon/Projects/Meerkats/json_api/.gitignore",
+		"/Users/ramon/Qelp/mobile-qelp/clients/vivo/config.json",
+		"/Users/ramon/Qelp/mobile-qelp/clients/vivo/css/index.less",
+		"/Users/ramon/Projects/Vita Care/website/index.js",
+		"/Users/ramon/Projects/Vita Care/website/public/index.html",
+		"/Users/ramon/Projects/Vita Care/website/public/css/index_v1.css",
+		"/Users/ramon/Projects/Vita Care/website/public/css/index_v2.css",
+		"/Users/ramon/Projects/Vita Care/website/public/js/index_v2.js",
+		"/Users/ramon/Projects/Vita Care/website/public/js/index_v1.js",
+		"/Users/ramon/Projects/Vita Care/website/public/js/index.js",
+		"/Users/ramon/Projects/Vita Care/website/public/css/index.css",
+		"/Users/ramon/Qelp/translatinator/cli.js",
+		"/Users/ramon/Qelp/translatinator/config.json",
+		"/Users/ramon/Qelp/translatinator/app.js",
+		"/Users/ramon/Qelp/translatinator/modules/spellcheck_module.js",
+		"/Users/ramon/Qelp/translatinator/log/24/en_UK.log",
+		"/Users/ramon/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/ramon/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/ramon/Qelp/translatinator/node_modules/data-drive/index.js",
+		"/Users/ramon/Projects/journalism_ide/index.js",
+		"/Users/ramon/Qelp/translatinator/node_modules/data-drive/test/index.js",
+		"/private/var/folders/d7/g6qbwlmd43x2m8m2kttlcs6h0000gn/T/2708d286-ffb4-4878-a797-2afaf2a17efc/accept.customersaas.com/mobile-vikings-new/en-uk/index.html",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css/client.less",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css/core.less",
+		"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/app/views/usecase/steps.mustache",
+		"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/css/client.less",
+		"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/app/controllers/usecase/steps.coffee",
+		"/Users/ramon/Qelp/qelpconfig/jsonservice/bra56/brand_rights.json",
+		"/Users/ramon/Qelp/qelpconfig/jsonservice/bra109/popular_devices.json",
+		"/Users/ramon/Qelp/qelpconfig/jsonservice/bra31/brand_settings.json",
+		"/Users/ramon/Qelp/qelpclients/clients/hollandsnieuwe/css/header.less",
+		"/Users/ramon/Qelp/qelpclients/clients/hollandsnieuwe/css/index.less",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/about.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/journalism.html.erb",
+		"/Users/ramon/Downloads/chat-test-2k-master/app.js",
+		"/Users/ramon/Downloads/chat-test-2k-master/package.json",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/writing.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/page_not_found.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/controllers/blogpost_comments_controller.rb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/blogpost_comments/_form.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/models/blogpost_comment.rb",
+		"/Users/ramon/Qelp/parse_zooi/public/index.html",
+		"/Users/ramon/Qelp/parse_zooi/public/index.js",
+		"/Users/ramon/Qelp/parse_zooi/index.js",
+		"/Users/ramon/Qelp/parse_zooi/public/yaml/en-uk.yaml",
+		"/Users/ramon/Qelp/parse_zooi/public/index.less",
+		"/Users/ramon/Qelp/parse_zooi/public/less.min.js",
+		"/Users/ramon/Qelp/parse_zooi/package.json",
+		"/Users/ramon/Qelp/parse_zooi/views/index.jade",
+		"/Users/ramon/Qelp/parse_zooi/view/index.jade",
+		"/Users/ramon/Qelp/parse_zooi/interview.notes",
+		"/Users/ramon/Qelp/o2_mail_middleware/service.js",
+		"/Users/ramon/Qelp/phanton_test/index.js",
+		"/Users/ramon/Qelp/phanton_test/v2.js",
+		"/Users/ramon/Qelp/phanton_test/casper.js",
+		"/Users/ramon/Qelp/phanton_test/v3.js",
+		"/Users/ramon/Projects/reflection/server.js",
+		"/Users/ramon/Qelp/scrap_doc/service.js",
+		"/Users/ramon/Qelp/scrap_doc/node_modules/data-drive/index.js",
+		"/Users/ramon/Qelp/scrap_doc/app.js",
+		"/Users/ramon/Qelp/scrap_doc/package.json",
+		"/Users/ramon/Downloads/QELP.json",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css/index.less",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/app/views/header/homeinfosection.mustache",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/index.html",
+		"/Users/ramon/Qelp/translatinator/package.json",
+		"/Users/ramon/Qelp/scrap_doc/cli.js",
+		"/Users/ramon/Qelp/scrap_doc/config.json",
+		"/Users/ramon/Projects/journalism_ide/server.js",
+		"/Users/ramon/Projects/journalism_ide/templates/authors.js",
+		"/Users/ramon/Projects/journalism_ide/package.json",
+		"/Users/ramon/Qelp/translatinator/.gitignore",
+		"/Users/ramon/Qelp/translatinator/statetree.js",
+		"/Users/ramon/Qelp/translatinator/stager.js",
+		"/Users/ramon/Qelp/scrap_doc/.gitignore",
+		"/Users/ramon/Qelp/scrap_doc/bin/cli.js",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/csr/index.html",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/config.json",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/viking_wrapper_files/Viking-Framework.css",
+		"/Users/ramon/Projects/data-drive/index.js",
+		"/Users/ramon/Projects/data-drive/test/index.js",
+		"/Users/ramon/Projects/data-drive/test/test_config.json",
+		"/Users/ramon/Projects/data-drive/.gitignore",
+		"/Users/ramon/Projects/data-drive/config.json",
+		"/Users/ramon/Projects/data-drive/README.md",
+		"/Users/ramon/Projects/health-on-pi/app.js",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/app/views/list/manufacturertiles.mustache",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/app/views/list/devicebig.mustache",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/app/views/list/devicesmall.mustache",
+		"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/viking_wrapper_files/font-awesome.css",
+		"/Users/ramon/Projects/evelinemeijer/app/assets/stylesheets/nav.css.scss",
+		"/Users/ramon/Projects/evelinemeijer/app/views/layouts/application.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/assets/stylesheets/styles.css.scss",
+		"/Users/ramon/Qelp/scrap_doc/example.json",
+		"/Users/ramon/Projects/evelinemeijer/app/views/layouts/frontend.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/controllers/frontend_controller.rb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/article.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/blogpost.html.erb",
+		"/Users/ramon/Qelp/scrap_doc/pizza.json",
+		"/Users/ramon/Qelp/scrap_doc/pizza.txt",
+		"/Users/ramon/Qelp/qelpclients/clients/base-be/css/client.less",
+		"/Users/ramon/Qelp/qelpclients/clients/base-be/app/views/header/homeinfosection.mustache",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/home.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/books.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/assets/javascripts/application.js",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/_footer.html.erb",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/journalism.rss.builder",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/home.html.erb~",
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/contact.html.erb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 119.0,
+		"where_history":
+		[
+			"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
+			"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
+			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css",
+			"/Users/ramon/Qelp/qelpclients/clients/hollandsnieuwe/css",
+			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css",
+			"/Users/ramon/Qelp/scrap_doc/app.js",
+			"/Users/ramon/Qelp/scrap_doc",
+			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/viking_wrapper_files",
+			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css",
+			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/public/viking_wrapper_files",
+			"/Users/ramon/Projects/evelinemeijer/app/views/frontend",
+			"/Users/ramon/Qelp/mobile-qelp/clients/vivo/css",
+			"/Users/ramon/Qelp/qelpclients/webclients/v3.0/telmore/css",
+			"/Users/ramon/Qelp/qelpclients/webclients/v3.0/telmore/css/",
+			"/Users/ramon/Qelp/qelpclients/webclients/v3.0/telmore/css",
+			"/Users/ramon/Qelp/qelpclients/clients/base-be/css/client.less",
+			"/Users/ramon/Qelp/qelpclients/clients/base-be/css/index.less",
+			"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/css/index.less",
+			"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/css/client.less",
+			"/Users/ramon/Qelp/qelpclients/clients/t-mobile-us/public/index.html",
+			"/Users/ramon/Qelp/qelpclients/",
+			"/Users/ramon/Qelp/qelpclients",
+			"/Users/ramon/Qelp/qelpclients/clients/o2-webchat/app",
+			"/Users/ramon/Qelp/mobile-qelp/clients/vivo",
+			"/Users/ramon/Qelp/mobile-qelp/clients/vivo/node_modules",
+			"/Users/ramon/Qelp/mobile-qelp/clients/vivo",
+			"/Users/ramon/Qelp/mobile-qelp/clients/vivo/node_modules/qelpcore",
+			"/Users/ramon/Qelp/qelpconfig/jsonservice/bra41/untitled",
+			"/Users/ramon/Qelp/qelpconfig/jsonservice/bra41/popular_devices.json",
+			"/Users/ramon/Projects/test_grunt/css",
+			"/Users/ramon/Projects/qdocs/css/index.less",
+			"/Users/ramon/Qelp/gql/app.js",
+			"",
+			".",
+			"/Users/ramon/Qelp/qelpclients/webclients/v3.0/mobistar-be/css",
+			"/Users/ramon/Projects/Serenity/fish",
+			"/Users/ramon/Projects/devstar/config/nginx/nginx.conf",
+			"/Users/ramon/Projects/Serenity/install/install.sh",
+			"/User/ramon/Projects/Cquence/Cquence.js",
+			".",
+			"/Users/ramon/Qelp/mobile-qelp/clients/telenor/css",
+			"/Users/ramon/Qelp/qelpconfig/siteconfig",
+			".",
+			"/Users/ramon/Desktop/t-mobile-new.html",
+			".,/Users/ramon/Desktop/t-mobile-new.html",
+			"/Users/Desktop/t-mobile-new.html",
+			".,/Users/ramon/Documents/dragondicks",
+			".",
+			"example.html",
+			"README.md",
+			"find.js",
+			".",
+			"/Users/ramon/Projects/evelinemeijer/app/views/subscriber_mailer/new_article.html.erb",
+			"",
+			"/Users/ramon/Qelp/lock",
+			"/Users/ramon/Qelp/qelpclients/webclients/v3.0/vivo",
+			"/Users/ramon/Qelp/qelpconfig",
+			"/Users/ramon/Qelp/qelpconfig/jsonservice/bra56/",
+			"/Users/ramon/Qelp/qelpconfig/jsonservice/bra56",
+			"/Users/ramon/Desktop/replace.html",
+			"/Users/ramon/Projects/coffeeshops/website/public/semantic",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"required",
+			"email",
+			"account",
+			"accounts",
+			"quests",
+			"then",
+			"console.log",
+			"config",
+			"config_file",
+			"sp_email_password",
+			"spellcheck",
+			"check",
+			"loop",
+			"silly",
+			"evaluateDevices",
+			"qelp",
+			"first-step",
+			"@render",
+			"qelp-to",
+			"/'));",
+			" 80.127.10.244",
+			".input",
+			"\n  }\n  console.log( output )\n}",
+			"var config = {\n	\"auth\": {\n    	\"username\": \"analytics@qelp.com\",\n    	\"password\": \"4n47yt1tc5Space\"\n	},\n	\"sheet\": {\n	    \"id\": \"optional id\",\n	    \"worksheet\": {\n	        \"name\": \"Sheet1\",\n	        \"id\": \"optional id\"\n	    }\n	},\n	\"mapping\": {\n	    \"columns\":[\n	        [\"1\", \"key_1\"],\n	        [\"2\", \"value_1\"],\n\n	        [\"3\", \"key_2\"],\n	        [\"4\", \"value_2\"],\n\n	        [\"5\", \"key_3\"],\n	        [\"6\", \"value_3\"],\n\n	        [\"7\", \"key_4\"],\n	        [\"8\", \"value_4\"]\n	    ]\n	}\n};\n\nvar DD = require('data-drive')( config );\n\nvar openConnection = function(){\n  DD.connect(function(){\n    var sheet = GQL.db();\n      for (var i = 1; i < sheet.length; i++) {\n        devices.push( sheet[i] );\n        remapDevice( sheet[i] );\n      };\n  });\n}\n\nfunction remapDevice( device ){\n  var input = device\n  var output = {\n     instructions: []\n  };\n  for (var key in input) {\n     var m = key.match(/[a-z]_([0-9]+)(\\w+)/);\n     console.log( m )\n     if (m) {\n         var num = m[1];\n         var name = m[2];\n         if (!output.instructions[num-1]) {\n             output.instructions[num-1] = {};\n         }\n\n         output.instructions[num-1][\"step_id\"] = parseInt( key.split(\"step_\")[1].split(\"_\")[0] )\n         output.instructions[num-1][name] = input[key];\n     } else {\n         output[key] = input[key];\n     }\n  }\n  console.log( output )\n}\n\n\n\nopenConnection();",
+			"	},\n	\"mapping\": {\n	    \"columns\":[\n	        [\"1\", \"key_1\"],\n	        [\"2\", \"value_1\"],\n\n	        [\"3\", \"key_2\"],\n	        [\"4\", \"value_2\"],\n\n	        [\"5\", \"key_3\"],\n	        [\"6\", \"value_3\"],\n\n	        [\"7\", \"key_4\"],\n",
+			"();",
+			"var",
+			");\n",
+			"@font",
+			"feedback",
+			";\n",
+			"@media",
+			"@media 14",
+			"14",
+			".content.container",
+			"bread",
+			"search",
+			"qelp-auto",
+			"qelp-search",
+			"qelp-h3-wrap",
+			"qelp-change-device",
+			"qelp-header-sub-devicehome",
+			"qelp-h3-center",
+			"qelp-csr-header",
+			"(max-width: 400px)",
+			"all",
+			"qelp-captio",
+			"(min-width: 1441px)",
+			"qelp-search",
+			"qelp-device-list",
+			" )",
+			"/\",",
+			"console.log",
+			"steps",
+			"/webfonts/",
+			".qelp-h3",
+			"20px",
+			"change",
+			"qelp-device-home-usecase",
+			".qelp-right",
+			"background: #00cc9b;",
+			"  background: #00cc9b;",
+			"qelp-h3-wrap",
+			"qelp-header",
+			";\n",
+			".qelp-header h4",
+			".qelp-feedback-button",
+			"yes",
+			"qelp-h3-wrap",
+			"qelp-header-manufacturername",
+			"qelp-topic",
+			"a:link",
+			"a",
+			"qelp-topic",
+			".qelp-category-link-name",
+			"qelp-caption",
+			"qelp-category-link-icon",
+			"qelp-category",
+			"qelp-device-home-categories",
+			".right",
+			".right'",
+			".right",
+			"qelp-category-link-icon",
+			"elp-category",
+			"icon",
+			"margin-bottom: 10px",
+			"margin-bottom: 10px;",
+			"margin-bottom: 10px",
+			"scale",
+			"qelp",
+			".qelp-device-selector-devices",
+			"qelp-h3",
+			".h3-center",
+			"https://echo.test.vikingco.com/static-20150403-160233/viking-fw/fonts",
+			"../fonts",
+			"/fonts",
+			"../../viking-fw",
+			"viking-fw",
+			"console.log",
+			"header",
+			"blockq",
+			"block",
+			"color",
+			"/journalistiek",
+			"/writing",
+			"h2",
+			"bra",
+			"Ubuntu",
+			"{\n",
+			"#demo",
+			"qoogle",
+			"submitButton",
+			"feedback",
+			" qelp-guided-faq-subject",
+			"=======",
+			"========",
+			"qelp-opened",
+			"moedersss",
+			"	constructor",
+			"qelp-device-selector-manufacturer",
+			"qelp-header",
+			"qelp-header-infosection",
+			"qelp",
+			"dv",
+			"update",
+			"orientation",
+			"qelp-guide-faq-s",
+			"alert"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"meerkat",
+			"meerkats",
+			"accounts",
+			"account",
+			"instructions",
+			"webfonts/",
+			"/webfonts",
+			"https://echo.test.vikingco.com/static-20150403-160233/viking-fw/fonts",
+			"https://echo.test.vikingco.com/static-20150403-160233/viking-fw",
+			"/portfolio",
+			"/bloggen",
+			"@font-stack;",
+			"@font-stack",
+			"@ocean",
+			"#475E1E",
+			"#009F98",
+			"@media screen and (max-width: 20px)",
+			"@media screen and (min-width: 320px)",
+			"@media screen and (min-width: 800px)",
+			"#E01174",
+			"href=\"https://support.t-mobile.com",
+			"src=\"https://support.t-mobile.com",
+			"href=\"https://support.t-mobile.com",
+			"\"",
+			"//",
+			"update",
+			"/public/",
+			"Details",
+			"serenity",
+			"/serenity/projects",
+			"/serenity",
+			"",
+			"serenity",
+			"//emulator-us-east.customersaas.com.s3.amazonaws.com",
+			"https://support.t-mobile.com/servlet/JiveServlet/downloadImage/102-12784-8-23050/All+Apps.png",
+			"//www.t-mobile.com/foresee/foresee-trigger.js",
+			"src=\"https://t-mobile.com",
+			"src=\"https://tmobile-us.inq.com",
+			"href=\"https://tmobile-us.inq.com",
+			"src=\"https://support.t-mobile.com/",
+			"href=\"https://support.t-mobile.com/",
+			"we all",
+			"Cquence",
+			"\"http://example.com/some_sprite.png\"",
+			"close",
+			"\"now\"",
+			"//",
+			"@article",
+			"padding: 10px 0 10px 20px",
+			"log",
+			"Log",
+			"src=\"http://semantic-ui.com/images",
+			".getStats",
+			".getStat",
+			"getStats"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 99.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 110.0
+	},
+	"output.textarea":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "",
+	"project": "meerkats.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"con",
+				"config.json"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"lay",
+				"app/views/layouts/frontend.html.erb"
+			],
+			[
+				"l",
+				"node_modules/express/node_modules/content-disposition/LICENSE"
+			],
+			[
+				"cs",
+				"app/csr.coffee"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"",
+				"Qelp_talk_GA.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
