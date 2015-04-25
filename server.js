@@ -1,4 +1,5 @@
 var Hapi = require('hapi');
+var r = require('rethinkdb');
 
 var server = new Hapi.Server();
 server.connection({ port: 1337 });
@@ -17,6 +18,11 @@ server.route({
     handler: function (request, reply) {
         reply({"id": request.params.id });
     }
+});
+
+
+server.register({ register: require('lout') }, function(err) {
+    console.log( err );
 });
 
 server.start(function () {
