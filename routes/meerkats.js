@@ -12,7 +12,7 @@ r.connect({
         connection = conn;
     });
 
-/// Acounts
+/// Meerkats
 module.exports = [
 {
     method: 'GET',
@@ -53,20 +53,26 @@ module.exports = [
     config: {
         validate: {
             payload: {
-                account_id:  Joi.string(),
-                birthdate: "Wed Apr 07 1982 00:00:00 GMT+00:00" ,
-                full_name:  "Ralf Nieuwenhuijsen" ,
-                nick_name:  "Fladder" ,
+                account_id:  Joi.string().required(),
+                birthdate: Joi.string(),
+                full_name:  Joi.string().min(5).max(50),
+                nick_name:  Joi.string().min(5).max(20).required(),
                 notifiers: {
-                    email: "ralf@lietspiek.nl",
-                    phone:  "3163123232"
+                    email: Joi.string().email(),
+                    phone:  Joi.string()
                 },
+                scores: {
+                    environment: Joi.number().integer(),
+                    fitness: Joi.number().integer(),
+                    happiness: Joi.number().integer(),
+                    hygine: Joi.number().integer(),
+                    reputation: Joi.number().integer(),
+                    thriftiness: Joi.number().integer(),
+                    wisdom: Joi.number().integer()
+                },                
                 skin : {
-                    meerkat:  "default"
-                },
-                email: Joi.string().email().required(),
-                password: Joi.string().min(5).max(200).required(),
-                is_admin: Joi.boolean()
+                    meerkat:  Joi.string().required()
+                }
             }
         },
         tags: ['meerkats', 'api', 'post'],
@@ -86,9 +92,26 @@ module.exports = [
     config: {
         validate: {
             payload: {
-                email: Joi.string().email(),
-                password: Joi.string().min(5).max(200),
-                is_admin: Joi.boolean()
+                account_id:  Joi.string(),
+                birthdate: Joi.string(),
+                full_name:  Joi.string().min(5).max(50),
+                nick_name:  Joi.string().min(5).max(20),
+                notifiers: {
+                    email: Joi.string().email(),
+                    phone:  Joi.string()
+                },
+                scores: {
+                    environment: Joi.number().integer(),
+                    fitness: Joi.number().integer(),
+                    happiness: Joi.number().integer(),
+                    hygine: Joi.number().integer(),
+                    reputation: Joi.number().integer(),
+                    thriftiness: Joi.number().integer(),
+                    wisdom: Joi.number().integer()
+                },                
+                skin : {
+                    meerkat:  Joi.string()
+                }
             }
         },
         tags: ['meerkats', 'api', 'put'],
