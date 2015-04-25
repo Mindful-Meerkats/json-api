@@ -10,7 +10,7 @@ gulp.task('server', function(){
 		script: 'server.js', 
 		ext: 'js',
 		env: { 'NODE_ENV': 'development' }
-  });
-});
+	});
+});	
 
 gulp.task('default',["server"]);
