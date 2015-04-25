@@ -12,7 +12,8 @@
     "hapi": "^8.4.0",
     "joi": "^6.3.0",
     "lout": "^6.2.2",
-    "rethinkdb": "^2.0.0"
+    "rethinkdb": "^2.0.0",
+    "react": "~0.13.2"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
@@ -21,9 +22,12 @@
     "gulp-task-listing": "~1.0.0",
     "browserify": "~9.0.8",
     "gulp-browserify": "~0.5.1",
-    "gulp-react": "~3.0.1",    
+    "gulp-react": "~3.0.1",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.1.2",
-    "reactify": "~1.1.0"
+    "reactify": "~1.1.0",
+    "gulp-concat": "~2.5.2",
+    "serve-static": "~1.9.2",
+    "finalhandler": "~0.3.5"
   }
 }
