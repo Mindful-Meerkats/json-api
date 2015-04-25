@@ -61,7 +61,8 @@ server.route({
     },    
     handler: function( request, reply ){
         r.table('quests').get( request.params.id ).run(connection, function( err, result ){
-            reply( result );
+            if( err ) reply( err );
+            else reply( result );
         });
     }
 });
@@ -93,13 +94,40 @@ server.route({
     method: 'PUT',
     path: '/quests/{id}',
     config: {
-        validate: {},
+        validate: {
+            payload: {
+                title: Joi.string().min(5).max(40),
+                description: Joi.string().min(5).max(140),
+                completed_text: Joi.string().min(5).max(140)
+            }
+        },
         tags: ['quests', 'api', 'put'],
         description: 'Update a quest record'
     },
-    handler: function (request, reply) {
-        reply({"id": request.params.id });
-    }
+    handler: function( request, reply ){
+        var quest = request.payload;
+        r.table('quests').get( request.params.id ).update( quest ).run(connection, function( err, result ){
+            if( err ) reply( err );
+            else reply( result );
+        });
+    }    
+});
+
+server.route({
+    method: 'DELETE',
+    path: '/quests/{id}',
+    config: {
+        validate: {},
+        tags: ['quests', 'api', 'delete'],
+        description: 'delete a quest record'
+    },
+    handler: function( request, reply ){
+        var quest = request.payload;
+        r.table('quests').delete( request.params.id ).run(connection, function( err, result ){
+            if( err ) reply( err );
+            else reply( result );
+        });
+    }    
 });
 
 
