@@ -1,4 +1,4 @@
 var quests = require('./quests');
-var acounts = require('./acounts');
+var accounts = require('./accounts');
 
-module.exports = [].concat(quests, acounts);
+module.exports = [].concat(quests, accounts);
