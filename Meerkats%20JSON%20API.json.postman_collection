@@ -25,7 +25,8 @@
 				"731683b3-a893-c565-9dc6-256207845d01",
 				"05a9d698-c6de-626d-4f8c-913ce5aa5300",
 				"5db5f309-fda5-5dc2-9b24-9b4333781847",
-				"2e052a20-e669-c2b4-20bb-67ebf1fbb870"
+				"2e052a20-e669-c2b4-20bb-67ebf1fbb870",
+				"ab2f88cd-052e-f367-c1ae-0fbad3354319"
 			],
 			"collection_name": "Meerkats JSON API",
 			"collection_owner": 0,
@@ -134,6 +135,29 @@
 			"helperAttributes": {},
 			"folder": "6ca49745-fb89-b47b-740d-9d3d5e23304c",
 			"synced": false
+		},
+		{
+			"id": "ab2f88cd-052e-f367-c1ae-0fbad3354319",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:1337/quests/3b9d4095-8192-486e-9704-9d2ccd57b7d3",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"collectionId": "8a52f145-afb3-b34a-7622-3feff3323d12",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DELETE",
+			"description": "DELETE a quest",
+			"descriptionFormat": "html",
+			"time": 1429980754335,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6ca49745-fb89-b47b-740d-9d3d5e23304c",
+			"synced": false,
+			"rawModeData": ""
 		}
 	]
 }
