@@ -6,6 +6,7 @@ var shell = require('shelljs');
 // Add a task to render the output 
 gulp.task('help', taskListing);
 
+// start and auto reloads server script
 gulp.task('api-server', function(){
 	nodemon({
 		script: 'api.js',
@@ -13,6 +14,8 @@ gulp.task('api-server', function(){
 		env: { 'NODE_ENV': 'development' }
 	});
 });	
+
+// dumps db and checks in
 gulp.task('check-in', function(){
 	if( !shell.which('git') ){
 	  echo('Sorry, this task requires git, please install.');
