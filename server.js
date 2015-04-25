@@ -3,7 +3,7 @@ var r = require('rethinkdb');
 r.connect({ 
         host: 'localhost',
         port: 28015,
-        db: 'development'
+        db: process.env.NODE_ENV
     },
     function(err, conn) { 
         if( err ) throw err;

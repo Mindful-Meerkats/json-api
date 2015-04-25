@@ -9,4 +9,4 @@ gulp.task('server', function(){
   });
 });
 
-gulp.task('default',["build_db"]);
+gulp.task('default',["server"]);
