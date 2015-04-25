@@ -30,6 +30,27 @@ server.route({
     }
 });
 
+//////////// QUESTS
+
+server.route({
+    method: 'GET',
+    path: '/quests',
+    config: {
+        validate: {},
+        tags: ['quests', 'api', 'get'],
+        description: 'Get all quests'
+    },    
+    handler: function( request, reply ){
+        r.table('quests').run(connection, function(err, cursor) {
+            if (err) reply( err );
+            cursor.toArray(function(err, result) {
+                if (err) reply( err );
+                else reply( result );
+            });
+        });
+    }
+});
+
 server.route({
     method: 'GET',
     path: '/quests/{id}',
@@ -39,7 +60,7 @@ server.route({
         description: 'Get a quest with requested ID'
     },    
     handler: function( request, reply ){
-        r.db('development').table('quests').get("3b9d4095-8192-486e-9704-9d2ccd57b7d3").run(connection, function( err, result ){
+        r.table('quests').get( request.params.id ).run(connection, function( err, result ){
             reply( result );
         });
     }
@@ -61,7 +82,7 @@ server.route({
     },
     handler: function( request, reply ){
         var quest = request.payload;
-        r.db('development').table('quests').insert( quest ).run(connection, function( err, result ){
+        r.table('quests').insert( quest ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
