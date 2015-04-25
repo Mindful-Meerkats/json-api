@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-nodemon": "^2.0.2",
-    "gulp-server-livereload": "^1.2.4"
+    "gulp-nodemon": "^2.0.2"
   }
 }
