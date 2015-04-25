@@ -19,5 +19,6 @@
     "gulp-nodemon": "^2.0.2",
     "gulp-server-livereload": "^1.2.4",
     "gulp-task-listing": "~1.0.0"
+    "gulp-nodemon": "^2.0.2"
   }
 }
