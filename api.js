@@ -123,7 +123,7 @@ server.route({
     },
     handler: function( request, reply ){
         var quest = request.payload;
-        r.table('quests').delete( request.params.id ).run(connection, function( err, result ){
+        r.table('quests').get( request.params.id ).delete().run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
