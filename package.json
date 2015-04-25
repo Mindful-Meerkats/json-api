@@ -12,8 +12,13 @@
     "hapi": "^8.4.0",
     "joi": "^6.3.0",
     "lout": "^6.2.2",
+<<<<<<< HEAD
     "react": "^0.13.2",
     "rethinkdb": "^2.0.0"
+=======
+    "rethinkdb": "^2.0.0",
+    "react": "~0.13.2"
+>>>>>>> 03c8c676528d2115be3900b46703b5b763548362
   },
   "devDependencies": {
     "browserify": "~9.0.8",
@@ -24,8 +29,20 @@
     "gulp-react": "~3.0.1",
     "gulp-server-livereload": "^1.2.4",
     "gulp-task-listing": "~1.0.0",
+<<<<<<< HEAD
     "reactify": "~1.1.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.1.2"
+=======
+    "browserify": "~9.0.8",
+    "gulp-browserify": "~0.5.1",
+    "gulp-react": "~3.0.1",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.1.2",
+    "reactify": "~1.1.0",
+    "gulp-concat": "~2.5.2",
+    "serve-static": "~1.9.2",
+    "finalhandler": "~0.3.5"
+>>>>>>> 03c8c676528d2115be3900b46703b5b763548362
   }
 }

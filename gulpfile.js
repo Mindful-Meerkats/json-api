@@ -10,15 +10,24 @@ var concat = require('gulp-concat');
 // Add a task to render the output 
 gulp.task('help', taskListing);
 
-gulp.task('server', function(){
+gulp.task('api-server', function(){
 	nodemon({
-		script: 'server.js', 
+		script: 'api.js', 
+		ext: 'js',
+		env: { 'NODE_ENV': 'development' }
+	});
+});	
+
+gulp.task('admin-server', function(){
+	nodemon({
+		script: 'admin.js', 
 		ext: 'js',
 		env: { 'NODE_ENV': 'development' }
 	});
 });	
  
-gulp.task('browserify', function(){
+gulp.task('admin-browserify', function(){
+
   var bundler = browserify({
     entries: ['./admin/main.js'], 									// Only need initial file, browserify finds the deps
     transform: [reactify],      									// We want to convert JSX to normal javascript
@@ -28,28 +37,20 @@ gulp.task('browserify', function(){
  var watcher  = watchify(bundler);
 
   return watcher
-  .on('update', function(){ 											// When any files update
+  .on('update', function(){ 											  // When any files update
     var updateStart = Date.now();
     console.log('Updating!');
-    watcher.bundle() 															// Create new bundle that uses the cache for high performance
-    .pipe(source('main.js'))
-    // This is where you add uglifying etc.
-    .pipe(gulp.dest('./build/'));
+    watcher.bundle() 															  // Create new bundle that uses the cache for high performance
+    .pipe(source('main.js'))    
+    .pipe(gulp.dest('./admin/'));
     console.log('Updated!', (Date.now() - updateStart) + 'ms');
   })
-  .bundle() 																			// Create the initial bundle when starting the task
+  .bundle() 																			  // Create the initial bundle when starting the task
   .pipe(source('main.js'))
-  .pipe(gulp.dest('./build/'));
+  .pipe(gulp.dest('./admin/build.js'));
 });
 
-// I added this so that you see how to run two watch tasks
-gulp.task('css', function(){
-  gulp.watch('styles/**/*.css', function(){
-    return gulp.src('styles/**/*.css')
-    .pipe(concat('main.css'))
-    .pipe(gulp.dest('build/'));
-  });
-});
+gulp.task('admin', ['admin-browserify', 'admin-server']);
+gulp.task('api', ['admin-api']);
 
-// Just running the two tasks
-gulp.task('default', ['browserify', 'css', 'server']);
+gulp.task('default', ['admin']);
