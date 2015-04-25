@@ -16,7 +16,7 @@ r.connect({
     });
 
 var server = new Hapi.Server();
-server.connection({ port: 1337 });
+server.connection({ port: 1337, routes: { cors: true } });
 
 server.route({
     method: 'GET',
