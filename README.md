@@ -31,6 +31,6 @@ Also install using pip
 
 ## Loading database dumps
     
-    rethink restore databases/[tab][tab]
+    rethinkdb restore databases/[tab][tab]
 
     
