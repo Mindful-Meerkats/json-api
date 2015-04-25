@@ -1,0 +1,2 @@
+/// Acounts
+module.exports = [];
