@@ -1,12 +1,17 @@
 var Hapi = require('hapi');
 var r = require('rethinkdb');
+var node_env = process.env.NODE_ENV;
+var Joi = require('joi');
+var connection;
+
 r.connect({ 
         host: 'localhost',
         port: 28015,
-        db: process.env.NODE_ENV
+        db: node_env
     },
     function(err, conn) { 
         if( err ) throw err;
+        connection = conn;
     });
 
 var server = new Hapi.Server();
@@ -15,26 +20,64 @@ server.connection({ port: 1337 });
 server.route({
     method: 'GET',
     path: '/',
-    handler: function (request, reply) {
-        reply('I AM GROOT');
-    },
     config: {
         validate: {},
         tags: ['root', 'api', 'get'],
-        description: 'Root of the application'
+        description: 'Hey there, Welcome to the Mindful Meerkats API. This is the root of the API.'
+    },    
+    handler: function (request, reply) {
+        reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "documentation": "/docs" });
     }
 });
 
 server.route({
     method: 'GET',
     path: '/quests/{id}',
-    handler: function (request, reply) {
-        reply({"id": request.params.id });
-    },
     config: {
         validate: {},
         tags: ['quests', 'api', 'get'],
         description: 'Get a quest with requested ID'
+    },    
+    handler: function( request, reply ){
+        r.db('development').table('quests').get("3b9d4095-8192-486e-9704-9d2ccd57b7d3").run(connection, function( err, result ){
+            reply( result );
+        });
+    }
+});
+
+server.route({
+    method: 'POST',
+    path: '/quests/',
+    config: {
+        validate: {
+            payload: {
+                title: Joi.string().min(5).max(40).required(),
+                description: Joi.string().min(5).max(140).required(),
+                completed_text: Joi.string().min(5).max(140).required()
+            }
+        },
+        tags: ['quests', 'api', 'post'],
+        description: 'Create a quest record'
+    },
+    handler: function( request, reply ){
+        var quest = request.payload;
+        r.db('development').table('quests').insert( quest ).run(connection, function( err, result ){
+            if( err ) reply( err );
+            else reply( result );
+        });
+    }    
+});
+
+server.route({
+    method: 'PUT',
+    path: '/quests/{id}',
+    config: {
+        validate: {},
+        tags: ['quests', 'api', 'put'],
+        description: 'Update a quest record'
+    },
+    handler: function (request, reply) {
+        reply({"id": request.params.id });
     }
 });
 
