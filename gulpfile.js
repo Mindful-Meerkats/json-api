@@ -14,12 +14,18 @@ gulp.task('api-server', function(){
 	});
 });	
 gulp.task('check-in', function(){
-	if (!shell.which('git')) {
+	if( !shell.which('git') ){
 	  echo('Sorry, this task requires git, please install.');
 	  exit(1);
-	}	
+	}
 	shell.cd(__dirname + '/databases');
-	shell.exec('rethinkdb dump');
+	shell.rm('rethinkdb_dump.tar.gz');
+	shell.exec('rethinkdb dump -f rethinkdb_dump.tar.gz');
+	shell.cd('..');
+	if( shell.exec('git commit -am "Auto-commit"').code !== 0 ){
+ 	 	echo('Error: Git commit failed');
+  		exit(1);
+	}
 });
 
 gulp.task('api', ['api-server']);
