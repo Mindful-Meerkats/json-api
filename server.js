@@ -17,6 +17,11 @@ server.route({
     path: '/',
     handler: function (request, reply) {
         reply('I AM GROOT');
+    },
+    config: {
+        validate: {},
+        tags: ['root', 'api', 'get'],
+        description: 'Root of the application'
     }
 });
 
@@ -25,6 +30,11 @@ server.route({
     path: '/quests/{id}',
     handler: function (request, reply) {
         reply({"id": request.params.id });
+    },
+    config: {
+        validate: {},
+        tags: ['quests', 'api', 'get'],
+        description: 'Get a quest with requested ID'
     }
 });
 
