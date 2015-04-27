@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin"
+			],
+			[
 				"api",
 				"api-server"
 			],
@@ -380,10 +384,6 @@
 				"offset"
 			],
 			[
-				"marg",
-				"margin-top"
-			],
-			[
 				"ste",
 				"stepElements"
 			],
@@ -713,27 +713,25 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ramon/Projects/Meerkats/json_api",
-		"/Users/ramon/Projects/Meerkats/json_api/routes",
-		"/Users/ramon/Projects/Meerkats/admin"
+		"/Users/ramon/Projects/Meerkats/json_api"
 	],
 	"file_history":
 	[
+		"/Users/ramon/Projects/Meerkats/admin/public/css/index.css",
+		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
+		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
+		"/Users/ramon/Projects/Meerkats/json_api/package.json",
+		"/Users/ramon/Projects/Meerkats/admin/public/js/index.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/index.js",
-		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
 		"/Users/ramon/Projects/Meerkats/json_api/api.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/quests.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
-		"/Users/ramon/Projects/Meerkats/json_api/package.json",
 		"/Users/ramon/Projects/Meerkats/admin/ui/jsx/app.js",
 		"/Users/ramon/Projects/Meerkats/admin/server.js",
 		"/Users/ramon/Projects/Meerkats/admin/gulpfile.js",
 		"/Users/ramon/Projects/Meerkats/admin/app.js",
-		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
-		"/Users/ramon/Projects/Meerkats/admin/public/css/index.css",
-		"/Users/ramon/Projects/Meerkats/admin/public/js/index.js",
 		"/Users/ramon/Projects/Meerkats/json_api/server.js",
 		"/Users/ramon/Projects/Meerkats/json_api/README.md",
 		"/Users/ramon/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",

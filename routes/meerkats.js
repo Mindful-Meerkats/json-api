@@ -1,6 +1,7 @@
 var Joi = require('joi');
 var r = require('rethinkdb');
 var node_env = process.env.NODE_ENV;
+var moment = require('moment');
 
 r.connect({ 
         host: 'localhost',
@@ -22,7 +23,7 @@ module.exports = [
         tags: ['meerkats', 'api', 'get'],
         description: 'Get all meerkats'
     },    
-    handler: function( request, reply ){
+    handler: function( remeerkat, reply ){
         r.table('meerkats').run(connection, function(err, cursor) {
             if (err) reply( err );
             cursor.toArray(function(err, result) {
@@ -38,10 +39,10 @@ module.exports = [
     config: {
         validate: {},
         tags: ['meerkats', 'api', 'get'],
-        description: 'Get an meerkat with requested ID'
+        description: 'Get an meerkat with remeerkated ID'
     },    
-    handler: function( request, reply ){
-        r.table('meerkats').get( request.params.id ).run(connection, function( err, result ){
+    handler: function( remeerkat, reply ){
+        r.table('meerkats').get( remeerkat.params.id ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -78,9 +79,13 @@ module.exports = [
         tags: ['meerkats', 'api', 'post'],
         description: 'Create an meerkat'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('meerkats').insert( quest ).run(connection, function( err, result ){
+    handler: function( remeerkat, reply ){
+        var meerkat = remeerkat.payload;
+        // parse date to Unix in ms
+        var parsedDate = moment( meerkat.birthdate ).format('x');
+        if( meerkat.birthdate ) meerkat.birthdate = parsedDate;
+
+        r.table('meerkats').insert( meerkat ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -117,9 +122,14 @@ module.exports = [
         tags: ['meerkats', 'api', 'put'],
         description: 'Update an meerkat'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('meerkats').get( request.params.id ).update( quest ).run(connection, function( err, result ){
+    handler: function( remeerkat, reply ){
+        var meerkat = remeerkat.payload;
+        
+        // parse date to Unix in ms
+        var parsedDate = moment( meerkat.birthdate ).format('x');
+        if( meerkat.birthdate ) meerkat.birthdate = parsedDate;
+
+        r.table('meerkats').get( remeerkat.params.id ).update( meerkat ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -133,9 +143,9 @@ module.exports = [
         tags: ['meerkats', 'api', 'delete'],
         description: 'Delete an meerkat'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('meerkats').get( request.params.id ).delete().run(connection, function( err, result ){
+    handler: function( remeerkat, reply ){
+        var meerkat = remeerkat.payload;
+        r.table('meerkats').get( remeerkat.params.id ).delete().run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });

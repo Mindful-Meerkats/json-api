@@ -22,7 +22,7 @@ module.exports = [
         tags: ['accounts', 'api', 'get'],
         description: 'Get all accounts'
     },    
-    handler: function( request, reply ){
+    handler: function( reaccount, reply ){
         r.table('accounts').run(connection, function(err, cursor) {
             if (err) reply( err );
             cursor.toArray(function(err, result) {
@@ -38,10 +38,10 @@ module.exports = [
     config: {
         validate: {},
         tags: ['accounts', 'api', 'get'],
-        description: 'Get an account with requested ID'
+        description: 'Get an account with reaccounted ID'
     },    
-    handler: function( request, reply ){
-        r.table('accounts').get( request.params.id ).run(connection, function( err, result ){
+    handler: function( reaccount, reply ){
+        r.table('accounts').get( reaccount.params.id ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -61,9 +61,9 @@ module.exports = [
         tags: ['accounts', 'api', 'post'],
         description: 'Create an account'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('accounts').insert( quest ).run(connection, function( err, result ){
+    handler: function( reaccount, reply ){
+        var account = reaccount.payload;
+        r.table('accounts').insert( account ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -83,9 +83,9 @@ module.exports = [
         tags: ['accounts', 'api', 'put'],
         description: 'Update an account'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('accounts').get( request.params.id ).update( quest ).run(connection, function( err, result ){
+    handler: function( reaccount, reply ){
+        var account = reaccount.payload;
+        r.table('accounts').get( reaccount.params.id ).update( account ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -99,9 +99,9 @@ module.exports = [
         tags: ['accounts', 'api', 'delete'],
         description: 'Delete an account'
     },
-    handler: function( request, reply ){
-        var quest = request.payload;
-        r.table('accounts').get( request.params.id ).delete().run(connection, function( err, result ){
+    handler: function( reaccount, reply ){
+        var account = reaccount.payload;
+        r.table('accounts').get( reaccount.params.id ).delete().run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
