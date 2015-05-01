@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"min-",
+				"min-height"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"bakcgr",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"borderColor"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"borde",
+				"borderColor"
+			],
+			[
 				"marg",
 				"margin"
 			],
@@ -80,16 +124,8 @@
 				"cursor"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"fonty",
 				"font-family"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"each",
@@ -444,10 +480,6 @@
 				"width"
 			],
 			[
-				"paddin",
-				"padding-top"
-			],
-			[
 				"a",
 				"arguments"
 			],
@@ -482,38 +514,6 @@
 			[
 				"t",
 				"t_s"
-			],
-			[
-				"l",
-				"l_h"
-			],
-			[
-				"r",
-				"r_h"
-			],
-			[
-				"co",
-				"connect"
-			],
-			[
-				"ch",
-				"changeActiveLi"
-			],
-			[
-				"z",
-				"z-index"
-			],
-			[
-				"h",
-				"height"
-			],
-			[
-				"fl",
-				"float"
-			],
-			[
-				"w",
-				"width"
 			]
 		]
 	},
@@ -713,24 +713,35 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ramon/Projects/Meerkats/json_api"
+		"/Users/ramon/Projects/Meerkats/admin",
+		"/Users/ramon/Projects/Meerkats/admin/less",
+		"/Users/ramon/Projects/Meerkats/admin/public",
+		"/Users/ramon/Projects/Meerkats/admin/public/css",
+		"/Users/ramon/Projects/Meerkats/admin/public/jsx"
 	],
 	"file_history":
 	[
+		"/Users/ramon/Projects/Meerkats/admin/less/table-admin.less",
+		"/Users/ramon/Projects/Meerkats/admin/less/index.less",
+		"/Users/ramon/Projects/Meerkats/admin/less/variables.less",
 		"/Users/ramon/Projects/Meerkats/admin/public/css/index.css",
-		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
+		"/Users/ramon/Projects/Meerkats/admin/public/jsx/side_bar.jsx",
+		"/Users/ramon/Projects/Meerkats/admin/public/jsx/table_grid.jsx",
+		"/Users/ramon/Projects/Meerkats/admin/gulpfile.js",
 		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
+		"/Users/ramon/Projects/Meerkats/admin/less/buttons.less",
+		"/Users/ramon/Projects/Meerkats/admin/less/pizza.less",
+		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
 		"/Users/ramon/Projects/Meerkats/json_api/package.json",
 		"/Users/ramon/Projects/Meerkats/admin/public/js/index.js",
-		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/index.js",
 		"/Users/ramon/Projects/Meerkats/json_api/api.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/quests.js",
-		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
 		"/Users/ramon/Projects/Meerkats/admin/ui/jsx/app.js",
 		"/Users/ramon/Projects/Meerkats/admin/server.js",
-		"/Users/ramon/Projects/Meerkats/admin/gulpfile.js",
 		"/Users/ramon/Projects/Meerkats/admin/app.js",
 		"/Users/ramon/Projects/Meerkats/json_api/server.js",
 		"/Users/ramon/Projects/Meerkats/json_api/README.md",
@@ -837,14 +848,7 @@
 		"/Users/ramon/Qelp/scrap_doc/pizza.json",
 		"/Users/ramon/Qelp/scrap_doc/pizza.txt",
 		"/Users/ramon/Qelp/qelpclients/clients/base-be/css/client.less",
-		"/Users/ramon/Qelp/qelpclients/clients/base-be/app/views/header/homeinfosection.mustache",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/home.html.erb",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/books.html.erb",
-		"/Users/ramon/Projects/evelinemeijer/app/assets/javascripts/application.js",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/_footer.html.erb",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/journalism.rss.builder",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/home.html.erb~",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/contact.html.erb"
+		"/Users/ramon/Qelp/qelpclients/clients/base-be/app/views/header/homeinfosection.mustache"
 	],
 	"find":
 	{
@@ -855,6 +859,7 @@
 		"height": 119.0,
 		"where_history":
 		[
+			"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
 			"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
 			"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
 			"/Users/ramon/Qelp/qelpclients/clients/mobile-vikings/css",
@@ -924,6 +929,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"quest",
+			"legend",
+			"form",
+			"class=\"create",
+			"create",
+			"search",
+			"searcg",
 			"required",
 			"email",
 			"account",
@@ -1044,14 +1056,7 @@
 			"moedersss",
 			"	constructor",
 			"qelp-device-selector-manufacturer",
-			"qelp-header",
-			"qelp-header-infosection",
-			"qelp",
-			"dv",
-			"update",
-			"orientation",
-			"qelp-guide-faq-s",
-			"alert"
+			"qelp-header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1059,6 +1064,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"account",
 			"meerkat",
 			"meerkats",
 			"accounts",
