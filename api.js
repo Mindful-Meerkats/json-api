@@ -21,7 +21,7 @@ var privateKey = 'BbZJjyoXAdr8BUZuiKKARWimKfrSmQ6fv8kZ7OFfc';
 // Ex:
 //     Authorization: Bearer <token>
 var token = jwt.sign({ accountId: 123 }, privateKey);
-console.log( token );
+console.log('Use this as a Bearer token: ' + token );
 
 var validate = function (decodedToken, callback) {
 
