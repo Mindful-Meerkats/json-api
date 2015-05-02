@@ -528,9 +528,13 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "npm",
+		"last_filter": "ins",
 		"selected_items":
 		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"npm",
 				"npm: Install Package"
@@ -632,10 +636,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
 				"web",
 				"Markdown Preview: Preview in Browser"
 			],
@@ -713,24 +713,32 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/ramon/Projects/Meerkats/json_api",
+		"/Users/ramon/Projects/Meerkats/json_api/routes",
 		"/Users/ramon/Projects/Meerkats/admin",
-		"/Users/ramon/Projects/Meerkats/admin/less",
 		"/Users/ramon/Projects/Meerkats/admin/public",
 		"/Users/ramon/Projects/Meerkats/admin/public/css",
-		"/Users/ramon/Projects/Meerkats/admin/public/jsx"
+		"/Users/ramon/Projects/Meerkats/admin/views"
 	],
 	"file_history":
 	[
+		"/Users/ramon/Projects/Meerkats/admin/views/index.ejs",
+		"/Users/ramon/Projects/Meerkats/admin/server.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
+		"/Users/ramon/Projects/Meerkats/admin/lib/users.js",
+		"/Users/ramon/Projects/Meerkats/admin/lib/api.js",
+		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
+		"/Users/ramon/Projects/Meerkats/admin/config.json",
+		"/Users/ramon/Projects/Meerkats/admin/public/jsx/table_admin.jsx",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/quests.js",
+		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
 		"/Users/ramon/Projects/Meerkats/admin/less/table-admin.less",
 		"/Users/ramon/Projects/Meerkats/admin/less/index.less",
 		"/Users/ramon/Projects/Meerkats/admin/less/variables.less",
 		"/Users/ramon/Projects/Meerkats/admin/public/css/index.css",
-		"/Users/ramon/Projects/Meerkats/json_api/routes/meerkats.js",
-		"/Users/ramon/Projects/Meerkats/json_api/routes/accounts.js",
 		"/Users/ramon/Projects/Meerkats/admin/public/jsx/side_bar.jsx",
 		"/Users/ramon/Projects/Meerkats/admin/public/jsx/table_grid.jsx",
 		"/Users/ramon/Projects/Meerkats/admin/gulpfile.js",
-		"/Users/ramon/Projects/Meerkats/admin/public/index.html",
 		"/Users/ramon/Projects/Meerkats/admin/less/buttons.less",
 		"/Users/ramon/Projects/Meerkats/admin/less/pizza.less",
 		"/Users/ramon/Projects/Meerkats/json_api/gulpfile.js",
@@ -738,10 +746,8 @@
 		"/Users/ramon/Projects/Meerkats/admin/public/js/index.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/index.js",
 		"/Users/ramon/Projects/Meerkats/json_api/api.js",
-		"/Users/ramon/Projects/Meerkats/json_api/routes/quests.js",
 		"/Users/ramon/Projects/Meerkats/json_api/routes/acounts.js",
 		"/Users/ramon/Projects/Meerkats/admin/ui/jsx/app.js",
-		"/Users/ramon/Projects/Meerkats/admin/server.js",
 		"/Users/ramon/Projects/Meerkats/admin/app.js",
 		"/Users/ramon/Projects/Meerkats/json_api/server.js",
 		"/Users/ramon/Projects/Meerkats/json_api/README.md",
@@ -843,12 +849,7 @@
 		"/Users/ramon/Qelp/scrap_doc/example.json",
 		"/Users/ramon/Projects/evelinemeijer/app/views/layouts/frontend.html.erb",
 		"/Users/ramon/Projects/evelinemeijer/app/controllers/frontend_controller.rb",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/article.html.erb",
-		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/blogpost.html.erb",
-		"/Users/ramon/Qelp/scrap_doc/pizza.json",
-		"/Users/ramon/Qelp/scrap_doc/pizza.txt",
-		"/Users/ramon/Qelp/qelpclients/clients/base-be/css/client.less",
-		"/Users/ramon/Qelp/qelpclients/clients/base-be/app/views/header/homeinfosection.mustache"
+		"/Users/ramon/Projects/evelinemeijer/app/views/frontend/article.html.erb"
 	],
 	"find":
 	{
@@ -929,6 +930,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ld",
+			"onSave",
 			"quest",
 			"legend",
 			"form",
@@ -1054,9 +1057,7 @@
 			"========",
 			"qelp-opened",
 			"moedersss",
-			"	constructor",
-			"qelp-device-selector-manufacturer",
-			"qelp-header"
+			"	constructor"
 		],
 		"highlight": true,
 		"in_selection": false,
