@@ -19,6 +19,7 @@ module.exports = [
     path: '/accounts',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'get'],
         description: 'Get all accounts'
     },
@@ -37,6 +38,7 @@ module.exports = [
     path: '/accounts/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'get'],
         description: 'Get an account with reaccounted ID'
     },
@@ -61,6 +63,7 @@ module.exports = [
                 accessTokenSecret: Joi.string()
             }
         },
+        auth: 'token',
         tags: ['accounts', 'api', 'post'],
         description: 'Create an account'
     },
@@ -87,6 +90,7 @@ module.exports = [
                 accessTokenSecret: Joi.string()
             }
         },
+        auth: 'token',
         tags: ['accounts', 'api', 'put'],
         description: 'Update an account'
     },
@@ -103,6 +107,7 @@ module.exports = [
     path: '/accounts/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'delete'],
         description: 'Delete an account'
     },

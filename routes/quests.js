@@ -20,6 +20,7 @@ module.exports = [
     path: '/quests',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['quests', 'api', 'get'],
         description: 'Get all quests'
     },

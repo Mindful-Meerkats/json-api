@@ -20,6 +20,7 @@ module.exports = [
     path: '/meerkats',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['meerkats', 'api', 'get'],
         description: 'Get all meerkats'
     },
@@ -38,6 +39,7 @@ module.exports = [
     path: '/meerkats/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['meerkats', 'api', 'get'],
         description: 'Get an meerkat with remeerkated ID'
     },
@@ -76,6 +78,7 @@ module.exports = [
                 }
             }
         },
+        auth: 'token',
         tags: ['meerkats', 'api', 'post'],
         description: 'Create an meerkat'
     },
@@ -116,6 +119,7 @@ module.exports = [
                 }
             }
         },
+        auth: 'token',
         tags: ['meerkats', 'api', 'put'],
         description: 'Update an meerkat'
     },
@@ -133,6 +137,7 @@ module.exports = [
     path: '/meerkats/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['meerkats', 'api', 'delete'],
         description: 'Delete an meerkat'
     },

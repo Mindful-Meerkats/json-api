@@ -4,36 +4,8 @@ var node_env = process.env.NODE_ENV;
 var Joi = require('joi');
 var routes = require('./routes');
 var jwt = require('jsonwebtoken');
+var config = require('./config.json');
 var connection;
-
-var accounts = {
-    123: {
-        id: 123,
-        user: 'john',
-        fullName: 'John Doe',
-        scope: ['a', 'b']
-    }
-};
-
-var privateKey = 'BbZJjyoXAdr8BUZuiKKARWimKfrSmQ6fv8kZ7OFfc';
-
-// Use this token to build your request with the 'Authorization' header.
-// Ex:
-//     Authorization: Bearer <token>
-var token = jwt.sign({ accountId: 123 }, privateKey);
-console.log('Use this as a Bearer token: ' + token );
-
-var validate = function (decodedToken, callback) {
-
-    var error,
-        credentials = accounts[decodedToken.accountId] || {};
-
-    if (!credentials) {
-        return callback(error, false, credentials);
-    }
-
-    return callback(error, true, credentials)
-};
 
 r.connect({
         host: 'localhost',
@@ -45,13 +17,26 @@ r.connect({
         connection = conn;
     });
 
+var validate = function (decodedToken, callback) {
+    var error;
+
+    var credentials = r.table('apps').filter({ id: decodedToken.appId }).run( connection, function( err, result ){
+        if( err ) return {};
+        else return result;
+    });
+
+    if (!credentials) return callback(error, false, credentials);
+    else return callback(error, true, credentials);
+};
+
+
 var server = new Hapi.Server();
 server.connection({ port: 1337, routes: { cors: true } });
 
 server.register(require('hapi-auth-jwt'), function(error) {
     if( error ) throw error;
     server.auth.strategy('token', 'jwt', {
-        key: privateKey,
+        key: config.privateKey,
         validateFunc: validate
     });
 });
