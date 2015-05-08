@@ -2,12 +2,12 @@ var Joi = require('joi');
 var r = require('rethinkdb');
 var node_env = process.env.NODE_ENV;
 
-r.connect({ 
+r.connect({
         host: 'localhost',
         port: 28015,
         db: node_env
     },
-    function(err, conn) { 
+    function(err, conn) {
         if( err ) throw err;
         connection = conn;
     });
@@ -19,9 +19,10 @@ module.exports = [
     path: '/accounts',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'get'],
         description: 'Get all accounts'
-    },    
+    },
     handler: function( reaccount, reply ){
         r.table('accounts').run(connection, function(err, cursor) {
             if (err) reply( err );
@@ -37,9 +38,10 @@ module.exports = [
     path: '/accounts/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'get'],
         description: 'Get an account with reaccounted ID'
-    },    
+    },
     handler: function( reaccount, reply ){
         r.table('accounts').get( reaccount.params.id ).run(connection, function( err, result ){
             if( err ) reply( err );
@@ -53,11 +55,15 @@ module.exports = [
     config: {
         validate: {
             payload: {
-                email: Joi.string().email().required(),
-                password: Joi.string().min(5).max(200).required(),
-                is_admin: Joi.boolean()
+                email: Joi.string().email(),
+                password: Joi.string().min(5).max(200),
+                is_admin: Joi.boolean(),
+                twitterid: Joi.number(),
+                accessToken: Joi.string(),
+                accessTokenSecret: Joi.string()
             }
         },
+        auth: 'token',
         tags: ['accounts', 'api', 'post'],
         description: 'Create an account'
     },
@@ -67,7 +73,7 @@ module.exports = [
             if( err ) reply( err );
             else reply( result );
         });
-    }    
+    }
 },
 {
     method: 'PUT',
@@ -76,10 +82,15 @@ module.exports = [
         validate: {
             payload: {
                 email: Joi.string().email(),
+                id: Joi.string(),
                 password: Joi.string().min(5).max(200),
-                is_admin: Joi.boolean()
+                is_admin: Joi.boolean(),
+                twitterid: Joi.number(),
+                accessToken: Joi.string(),
+                accessTokenSecret: Joi.string()
             }
         },
+        auth: 'token',
         tags: ['accounts', 'api', 'put'],
         description: 'Update an account'
     },
@@ -89,13 +100,14 @@ module.exports = [
             if( err ) reply( err );
             else reply( result );
         });
-    }    
+    }
 },
 {
     method: 'DELETE',
     path: '/accounts/{id}',
     config: {
         validate: {},
+        auth: 'token',
         tags: ['accounts', 'api', 'delete'],
         description: 'Delete an account'
     },

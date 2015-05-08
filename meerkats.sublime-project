@@ -6,6 +6,12 @@
 		},
 		{
 			"path": "/Users/ramon/Projects/Meerkats/admin"
+		},
+		{
+			"path": "/Users/ramon/Projects/Meerkats/webclient"
+		},
+		{
+			"path": "/Users/ramon/Projects/Meerkats/designhub"
 		}
 	]
 }
