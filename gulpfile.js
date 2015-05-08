@@ -9,7 +9,7 @@ gulp.task('help', taskListing);
 // start and auto reloads server script
 gulp.task('api-server', function(){
 	nodemon({
-		script: 'api.js',
+		script: 'app.js',
 		ext: 'js',
 		env: { 'NODE_ENV': 'development' }
 	});
