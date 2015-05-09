@@ -1,6 +1,7 @@
 var Joi = require('joi');
 var r = require('rethinkdb');
 var node_env = process.env.NODE_ENV;
+var connection;
 
 r.connect({
         host: 'localhost',

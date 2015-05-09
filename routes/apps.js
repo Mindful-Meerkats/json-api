@@ -3,6 +3,7 @@ var r = require('rethinkdb');
 var node_env = process.env.NODE_ENV;
 var config = require('../config.json');
 var jwt = require('jsonwebtoken');
+var connection;
 
 r.connect({
         host: 'localhost',
