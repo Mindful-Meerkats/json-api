@@ -57,7 +57,7 @@ server.route({
         description: 'Hey there, Welcome to the Mindful Meerkats API. This is the root of the API.'
     },
     handler: function (request, reply) {
-        reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "documentation": "/docs" });
+        reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "documentation": "/docs" });
     }
 });
 
