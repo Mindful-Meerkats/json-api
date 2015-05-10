@@ -20,13 +20,15 @@ r.connect({
 var validate = function (decodedToken, callback) {
     var error;
 
-    var credentials = r.table('apps').filter({ id: decodedToken.appId }).run( connection, function( err, result ){
+    /*var credentials = r.table('apps').filter({ id: decodedToken.appId }).run( connection, function( err, result ){
         if( err ) return {};
         else return result;
-    });
+    });*/
 
-    if (!credentials) return callback(error, false, credentials);
-    else return callback(error, true, credentials);
+    if( decodedToken.is_admin ) return callback( error, true, decodedToken );
+
+    //if (!credentials) return callback(error, false, credentials);
+    //else return callback(error, true, credentials);
 };
 
 
