@@ -55,13 +55,10 @@ module.exports = [
     path: '/accounts',
     config: {
         validate: {
-            payload: {
-                email: Joi.string().email(),
-                password: Joi.string().min(5).max(200),
+            payload: {                
+                screen_name: Joi.string(),
                 is_admin: Joi.boolean(),
-                twitterid: Joi.number(),
-                accessToken: Joi.string(),
-                accessTokenSecret: Joi.string()
+                is_app:   Joi.boolean()                                
             }
         },
         auth: 'token',
@@ -81,14 +78,10 @@ module.exports = [
     path: '/accounts/{id}',
     config: {
         validate: {
-            payload: {
-                email: Joi.string().email(),
-                id: Joi.string(),
-                password: Joi.string().min(5).max(200),
+            payload: {                                
+                screen_name: Joi.string(),
                 is_admin: Joi.boolean(),
-                twitterid: Joi.number(),
-                accessToken: Joi.string(),
-                accessTokenSecret: Joi.string()
+                is_app:   Joi.boolean()                                
             }
         },
         auth: 'token',
