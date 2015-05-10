@@ -12,6 +12,12 @@
 		},
 		{
 			"path": "/Users/ramon/Projects/Meerkats/designhub"
+		},
+		{
+			"path": "/Users/ramon/Projects/Meerkats/assets-api"
+		},
+		{
+			"path": "/Users/ramon/Projects/Meerkats/auth"
 		}
 	]
 }
