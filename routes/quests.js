@@ -60,6 +60,7 @@ module.exports = [
 				description: Joi.string().min(5).max(140).required(),
 				completed_text: Joi.string().min(5).max(140).required(),
 				points: {
+					paw_print: §Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -67,6 +68,7 @@ module.exports = [
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
+					paw_print: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -95,8 +97,8 @@ module.exports = [
 				title: Joi.string().min(5).max(40),
 				description: Joi.string().min(5).max(140),
 				completed_text: Joi.string().min(5).max(140),
-				paw_print: Joi.number().integer(),
 				points: {
+					paw_print: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -104,6 +106,7 @@ module.exports = [
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
+					paw_print: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
