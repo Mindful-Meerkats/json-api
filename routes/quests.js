@@ -60,7 +60,7 @@ module.exports = [
 				description: Joi.string().min(5).max(140).required(),
 				completed_text: Joi.string().min(5).max(140).required(),
 				points: {
-					paw_print: §Joi.number().integer(),
+					paw_print: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
