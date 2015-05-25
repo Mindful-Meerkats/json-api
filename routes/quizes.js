@@ -26,7 +26,7 @@ module.exports = [
         description: 'Get all quizes'
     },
     handler: function( requiz, reply ){
-        r.table('quizes').run(connection, function(err, cursor) {
+        r.table('quests').filter({type: "quiz"}).run(connection, function(err, cursor) {
             if (err) reply( err );
             cursor.toArray(function(err, result) {
                 if (err) reply( err );
@@ -44,7 +44,7 @@ module.exports = [
         description: 'Get a quiz with requized ID'
     },
     handler: function( requiz, reply ){
-        r.table('quizes').get( requiz.params.id ).run(connection, function( err, result ){
+        r.table('quests').get( requiz.params.id ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
@@ -58,6 +58,7 @@ module.exports = [
             payload: {
                 title: Joi.string().min(5).max(40).required(),
                 description: Joi.string().min(5).max(140).required(),
+                // questions: [],
                 completed_text: Joi.string().min(5).max(140).required(),
                 points: Joi.number().integer()
             }
@@ -67,7 +68,8 @@ module.exports = [
     },
     handler: function( requiz, reply ){
         var quiz = requiz.payload;
-        r.table('quizes').insert( quiz ).run(connection, function( err, result ){
+        quiz.type = "quiz";
+        r.table('quests').insert( quiz ).run(connection, function( err, result ){
             if( err ) reply( err );
             else reply( result );
         });
