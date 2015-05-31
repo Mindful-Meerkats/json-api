@@ -58,7 +58,7 @@ module.exports = [
 		validate: {
 			payload: {
 				account_id:  Joi.string().required(),
-				birthdate: Joi.string(),
+				birthdate: Joi.string().allow( null ),
 				full_name:  Joi.string().min(5).max(50),
 				nickname:  Joi.string().min(5).max(20).required(),
 				notifiers: {
@@ -66,11 +66,13 @@ module.exports = [
 					phone:  Joi.string()
 				},
 				scores: {
-					fitness: Joi.number().integer(),
-					wellbeing: Joi.number().integer(),
-					community: Joi.number().integer(),
-					thriftiness: Joi.number().integer(),
-					wisdom: Joi.number().integer()
+				    happiness: Joi.number().integer(),
+				    fitness: Joi.number().integer(),
+				    wellbeing: Joi.number().integer(),
+				    community: Joi.number().integer(),
+				    thriftness: Joi.number().integer(),
+				    wisdom: Joi.number().integer(),
+				    pawprint: Joi.number().integer()
 				},
 				skin : {
 					meerkat:  Joi.string().required()
@@ -90,14 +92,14 @@ module.exports = [
 	}
 },
 {
-	method: 'PUT',
+	method: 'PATCH',
 	path: '/meerkats/{id}',
 	config: {
 		validate: {
 			payload: {
 				account_id:  Joi.string(),
 				id: Joi.string(),
-				birthdate: Joi.string(),
+				birthdate: Joi.string().allow( null ),
 				full_name:  Joi.string().min(5).max(50),
 				nickname:  Joi.string().min(5).max(20),
 				notifiers: {
@@ -105,11 +107,13 @@ module.exports = [
 					phone:  Joi.string()
 				},
 				scores: {
-					fitness: Joi.number().integer(),
-					wellbeing: Joi.number().integer(),
-					community: Joi.number().integer(),
-					thriftiness: Joi.number().integer(),
-					wisdom: Joi.number().integer()
+					happiness: Joi.number().integer(),
+				    fitness: Joi.number().integer(),
+				    wellbeing: Joi.number().integer(),
+				    community: Joi.number().integer(),
+				    thriftness: Joi.number().integer(),
+				    wisdom: Joi.number().integer(),
+				    pawprint: Joi.number().integer()
 				},
 				skin : {
 					meerkat:  Joi.string()
@@ -124,6 +128,48 @@ module.exports = [
 		var meerkat = remeerkat.payload;
 
 		r.table('meerkats').get( remeerkat.params.id ).update( meerkat ).run(connection, function( err, result ){
+			if( err ) reply( err );
+			else reply( result );
+		});
+	}
+},
+
+{
+	method: 'PUT',
+	path: '/meerkats/{id}',
+	config: {
+		validate: {
+			payload: {
+				account_id:  Joi.string(),
+				id: Joi.string(),
+				birthdate: Joi.string().allow( null ),
+				full_name:  Joi.string().min(5).max(50),
+				nickname:  Joi.string().min(5).max(20),
+				notifiers: {
+					email: Joi.string().email(),
+					phone:  Joi.string()
+				},
+				scores: {
+					happiness: Joi.number().integer(),
+				    fitness: Joi.number().integer(),
+				    wellbeing: Joi.number().integer(),
+				    community: Joi.number().integer(),
+				    thriftness: Joi.number().integer(),
+				    wisdom: Joi.number().integer(),
+				    pawprint: Joi.number().integer()
+				},
+				skin : {
+					meerkat:  Joi.string()
+				}
+			}
+		},
+		auth: 'token',
+		tags: ['meerkats', 'api', 'put'],
+		description: 'Update an meerkat'
+	},
+	handler: function( remeerkat, reply ){
+		var meerkat = remeerkat.payload;
+		r.table('meerkats').get( remeerkat.params.id ).replace( meerkat ).run(connection, function( err, result ){
 			if( err ) reply( err );
 			else reply( result );
 		});

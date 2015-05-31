@@ -25,7 +25,7 @@ var validate = function (decodedToken, callback) {
         else return result;
     });*/
 
-    if( decodedToken.is_admin ) return callback( error, true, decodedToken );
+    return callback( error, true, decodedToken );
 
     //if (!credentials) return callback(error, false, credentials);
     //else return callback(error, true, credentials);
@@ -57,7 +57,43 @@ server.route({
         description: 'Hey there, Welcome to the Mindful Meerkats API. This is the root of the API.'
     },
     handler: function (request, reply) {
-        reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "documentation": "/docs" });
+        r.table('meerkats').getAll( request.auth.credentials.account_id, {index: 'accounts'}).run( connection, function( err, cursor ){
+            console.log('stap2');
+            cursor.toArray( function( err, meerkats ){
+                console.log('stap3');
+                if( err ) throw err;
+                if( meerkats.length === 0 ){
+                    console.log('stap4');
+                    r.table('meerkats').insert({
+                        "account_id":  request.auth.credentials.account_id,
+                        "birthdate":  null,
+                        "full_name":  null,
+                        "nickname":  request.auth.credentials.screen_name,
+                        "notifiers": {},
+                        "skin":{ "meerkat": "default" },
+                        "quests":{ awaiting: [], accepted: [], declined: [], done: [] },
+                        "scores": {
+                            happiness: 0,
+                            fitness: 0,
+                            wellbeing: 0,
+                            pawprint: 0,
+                            community: 0,
+                            thriftness: 0,
+                            wisdom: 0
+                        }
+                    }, {returnChanges: true}).run( connection, function( err, result ){
+                        console.log('stap5');
+                        if( err ) throw err;
+                        else reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "meerkat": result.changes.new_val, "documentation": "/docs" });
+                    });
+                } else {
+                    console.log('stap6');
+                    reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "meerkat": meerkats[0], "documentation": "/docs" });           
+                }
+            });
+            
+        })
+        
     }
 });
 
