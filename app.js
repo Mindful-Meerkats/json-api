@@ -58,9 +58,7 @@ server.route({
     },
     handler: function (request, reply) {
         r.table('meerkats').getAll( request.auth.credentials.account_id, {index: 'accounts'}).run( connection, function( err, cursor ){
-            console.log('stap2');
             cursor.toArray( function( err, meerkats ){
-                console.log('stap3');
                 if( err ) throw err;
                 if( meerkats.length === 0 ){
                     console.log('stap4');
@@ -82,12 +80,10 @@ server.route({
                             wisdom: 0
                         }
                     }, {returnChanges: true}).run( connection, function( err, result ){
-                        console.log('stap5');
                         if( err ) throw err;
-                        else reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "meerkat": result.changes.new_val, "documentation": "/docs" });
+                        else reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "meerkat": result.changes[0].new_val, "documentation": "/docs" });
                     });
                 } else {
-                    console.log('stap6');
                     reply({ "msg": "Hey there, Welcome to the Mindful Meerkats API.", "account": request.auth.credentials, "meerkat": meerkats[0], "documentation": "/docs" });           
                 }
             });

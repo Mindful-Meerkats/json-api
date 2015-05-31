@@ -65,6 +65,12 @@ module.exports = [
 					email: Joi.string().email(),
 					phone:  Joi.string()
 				},
+				quests: {
+				    awaiting: Joi.array().items( Joi.any() ),
+				    done: Joi.array().items( Joi.any() ),
+				    accepted: Joi.array().items( Joi.any() ),
+				    declined: Joi.array().items( Joi.any() )
+				},
 				scores: {
 				    happiness: Joi.number().integer(),
 				    fitness: Joi.number().integer(),
@@ -105,6 +111,12 @@ module.exports = [
 				notifiers: {
 					email: Joi.string().email(),
 					phone:  Joi.string()
+				},
+				quests: {
+				    awaiting: Joi.array().items( Joi.any() ),
+				    done: Joi.array().items( Joi.any() ),
+				    accepted: Joi.array().items( Joi.any() ),
+				    declined: Joi.array().items( Joi.any() )
 				},
 				scores: {
 					happiness: Joi.number().integer(),
@@ -148,6 +160,12 @@ module.exports = [
 				notifiers: {
 					email: Joi.string().email(),
 					phone:  Joi.string()
+				},
+				quests: {
+				    awaiting: Joi.array().items( Joi.any() ),
+				    done: Joi.array().items( Joi.any() ),
+				    accepted: Joi.array().items( Joi.any() ),
+				    declined: Joi.array().items( Joi.any() )
 				},
 				scores: {
 					happiness: Joi.number().integer(),
