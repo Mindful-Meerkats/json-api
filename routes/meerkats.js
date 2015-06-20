@@ -183,7 +183,7 @@ module.exports = [
 		},
 		auth: 'token',
 		tags: ['meerkats', 'api', 'put'],
-		description: 'Update an meerkat'
+		description: 'Update an meerkat' 
 	},
 	handler: function( remeerkat, reply ){
 		var meerkat = remeerkat.payload;

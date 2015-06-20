@@ -89,6 +89,46 @@ module.exports = [
 	}
 },
 {
+	method: 'PATCH',
+	path: '/quests/{id}',
+	config: {
+		validate: {
+			payload: {
+				title: Joi.string().min(5).max(40),
+				description: Joi.string().min(5).max(140),
+				completed_text: Joi.string().min(5).max(140),
+				points: {
+					paw_print: Joi.number().integer(),
+					fitness: Joi.number().integer(),
+					wellbeing: Joi.number().integer(),
+					community: Joi.number().integer(),
+					thriftness: Joi.number().integer(),
+					wisdom: Joi.number().integer()
+				},
+				penalty: {
+					paw_print: Joi.number().integer(),
+					fitness: Joi.number().integer(),
+					wellbeing: Joi.number().integer(),
+					community: Joi.number().integer(),
+					thriftness: Joi.number().integer(),
+					wisdom: Joi.number().integer()
+				}
+			}
+		},
+		auth: 'token',
+		tags: ['quests', 'api', 'patch'],
+		description: 'Update an question'
+	},
+	handler: function( request, reply ){
+		var quest = request.payload;
+
+		r.table('quests').get( request.params.id ).update( quest ).run(connection, function( err, result ){
+			if( err ) reply( err );
+			else reply( result );
+		});
+	}
+},
+{
 	method: 'PUT',
 	path: '/quests/{id}',
 	config: {
@@ -102,7 +142,7 @@ module.exports = [
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
-					thriftiness: Joi.number().integer(),
+					thriftness: Joi.number().integer(),
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
@@ -110,7 +150,7 @@ module.exports = [
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
-					thriftiness: Joi.number().integer(),
+					thriftness: Joi.number().integer(),
 					wisdom: Joi.number().integer()
 				}
 			}

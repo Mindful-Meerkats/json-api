@@ -74,6 +74,29 @@ module.exports = [
     }
 },
 {
+	method: 'PATCH',
+	path: '/accounts/{id}',
+    config: {
+        validate: {
+            payload: {                                
+                screen_name: Joi.string(),
+                is_admin: Joi.boolean(),
+                is_app:   Joi.boolean()                                
+            }
+        },
+        auth: 'token',
+        tags: ['accounts', 'api', 'put'],
+        description: 'Update an account'
+	},
+	handler: function( reaccount, reply ){
+		var account = reaccount.payload;
+		r.table('accounts').get( reaccount.params.id ).update( account ).run(connection, function( err, result ){
+			if( err ) reply( err );
+			else reply( result );
+		});
+	}
+},
+{
     method: 'PUT',
     path: '/accounts/{id}',
     config: {
