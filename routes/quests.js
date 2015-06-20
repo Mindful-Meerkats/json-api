@@ -51,6 +51,38 @@ module.exports = [
 	}
 },
 {
+	method: 'GET',
+	path: '/quests/new/{id}',
+	config: {
+		validate: {},
+		tags: ['quests', 'api', 'get'],
+		description: 'Get a random quest'
+	},
+	handler: function( request, reply ){
+// 		reply( {msg:"Hello", "request": request.params } );
+		 r.table('quests').sample(3).run( connection, function( err, result ){
+			if( err ) reply( err );
+		    r.table('meerkats').get( request.params.id ).run( connection, function( er, res ){
+                if( er ) reply( er );
+                var the_one;
+                result.forEach( function( quest ){
+                    var match = false;
+                    res.quests.accepted.forEach(function( accepted ){
+                        if( accepted.id === quest.id ){
+                            match = true;   
+                        }
+                    });
+                    if( !match ){
+                      the_one = quest;
+                      return;
+                    } 
+                });
+                reply( the_one );
+		    });
+		 });
+	}
+},
+{
 	method: 'POST',
 	path: '/quests',
 	config: {
@@ -60,7 +92,7 @@ module.exports = [
 				description: Joi.string().min(5).max(140).required(),
 				completed_text: Joi.string().min(5).max(140).required(),
 				points: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -68,7 +100,7 @@ module.exports = [
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -98,7 +130,7 @@ module.exports = [
 				description: Joi.string().min(5).max(140),
 				completed_text: Joi.string().min(5).max(140),
 				points: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -106,7 +138,7 @@ module.exports = [
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -138,7 +170,7 @@ module.exports = [
 				description: Joi.string().min(5).max(140),
 				completed_text: Joi.string().min(5).max(140),
 				points: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),
@@ -146,7 +178,7 @@ module.exports = [
 					wisdom: Joi.number().integer()
 				},
 				penalty: {
-					paw_print: Joi.number().integer(),
+					pawprint: Joi.number().integer(),
 					fitness: Joi.number().integer(),
 					wellbeing: Joi.number().integer(),
 					community: Joi.number().integer(),

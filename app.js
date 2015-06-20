@@ -71,13 +71,13 @@ server.route({
                         "skin":{ "meerkat": "default" },
                         "quests":{ awaiting: [], accepted: [], declined: [], done: [] },
                         "scores": {
-                            happiness: 0,
-                            fitness: 0,
-                            wellbeing: 0,
-                            pawprint: 0,
-                            community: 0,
-                            thriftness: 0,
-                            wisdom: 0
+                            happiness: -1,
+                            fitness: -1,
+                            wellbeing: -1,
+                            pawprint: -1,
+                            community: -1,
+                            thriftness: -1,
+                            wisdom: -1
                         }
                     }, {returnChanges: true}).run( connection, function( err, result ){
                         if( err ) throw err;
