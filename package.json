@@ -11,9 +11,11 @@
   "dependencies": {
     "finalhandler": "^0.3.5",
     "hapi": "^8.4.0",
+    "hapi-alive": "^1.4.0",
     "hapi-auth-jwt": "^2.1.2",
     "joi": "^6.3.0",
     "jsonwebtoken": "^5.0.0",
+    "lab": "^13.0.1",
     "lout": "^6.2.2",
     "moment": "~2.10.2",
     "react": "^0.13.2",
